@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Student installs &#8212; Numerical Methods Course 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mozilla.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <link rel="shortcut icon" href="../_static/UBC_EOAS_favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The command line shell and git" href="python.html" />
+    <link rel="prev" title="Getting started" href="../getting_started.html" /> 
+  </head><body>
+<!-- remove Mozilla link tab from upper right corner of page -->
+
+
+    <div class="document">
+  <div class="documentwrapper">
+    
+    <div class="sphinxsidebar">
+        <nav>
+        <h2><a href="../index.html">Numerical Methods Course</a></h2>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ugradsyllabus.html">Undergrad Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gradsyllabus.html">Grad Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../schedule.html">Detailed Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../texts.html">Optional texts</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebook_toc.html">Labs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rubrics.html">Rubrics</a></li>
+</ul>
+
+        </nav>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+    </div>
+    <div class="bodywrapper">
+      <div class="body">
+        
+  <section id="Student-installs">
+<h1>Student installs<a class="headerlink" href="#Student-installs" title="Permalink to this headline">¶</a></h1>
+<p><strong>If you already have conda or anaconda installed, skip to ``Git install`` below</strong></p>
+<section id="For-MacOS-new-installs">
+<h2>For MacOS new installs<a class="headerlink" href="#For-MacOS-new-installs" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Download miniconda from <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a> – choose the <code class="docutils literal notranslate"><span class="pre">Miniconda3</span> <span class="pre">MacOSX</span> <span class="pre">64-bit</span> <span class="pre">pkg</span></code> file from the menu and run it, agreeing to the licences and accepting all defaults. You should install for “just me”</p></li>
+<li><p>To test your installation, open a fresh terminal window and at the prompt type <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">conda</span></code>. You should see something resembling the following output, with your username instead of <code class="docutils literal notranslate"><span class="pre">phil</span></code>:</p></li>
+</ol>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>% which conda
+/Users/phil/opt/miniconda3/bin/conda
+</pre></div>
+</div>
+</section>
+<section id="For-Windows-new-installs">
+<h2>For Windows new installs<a class="headerlink" href="#For-Windows-new-installs" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Download miniconda from <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a> – choose the <code class="docutils literal notranslate"><span class="pre">Miniconda3</span> <span class="pre">Windows</span> <span class="pre">64-bit</span></code>. download from the menu and run it, agreeing to the licences and accepting all defaults.</p></li>
+</ol>
+<p>The installer should suggest installing in a path that looks like:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\phil\Miniconda3
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Once the install completes hit the windows key and start typing <code class="docutils literal notranslate"><span class="pre">anaconda</span></code>. You should see a shortcut that looks like:</p></li>
+</ol>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Anaconda Powershell Prompt
+(Miniconda3)
+</pre></div>
+</div>
+<p><strong>Note that Windows comes with two different terminals ``cmd`` (old) and ``powershell`` (new). Always select the powershell version of the anaconda terminal</strong></p>
+<ol class="arabic simple" start="3">
+<li><p>Select the short cut. If the install was successful you should see something like:</p></li>
+</ol>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(base) (Miniconda3):Users/phil&gt;
+</pre></div>
+</div>
+<p>with your username substituted for phil.</p>
+</section>
+<section id="Git-install">
+<h2>Git install<a class="headerlink" href="#Git-install" title="Permalink to this headline">¶</a></h2>
+<p>Inside your powershell or MacOs terminal, install git using conda:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>conda install git
+</pre></div>
+</div>
+</section>
+<section id="Setting-up-the-course-repository">
+<h2>Setting up the course repository<a class="headerlink" href="#Setting-up-the-course-repository" title="Permalink to this headline">¶</a></h2>
+<p>In the terminal, change directories to your home directory (called <code class="docutils literal notranslate"><span class="pre">~</span></code> for short) and make a new directory called <code class="docutils literal notranslate"><span class="pre">repos</span></code> to hold the course notebook repository. Change into <code class="docutils literal notranslate"><span class="pre">repos</span></code> and clone the course:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd ~
+mkdir repos
+cd repos
+git clone https://github.com/phaustin/numeric_students.git
+</pre></div>
+</div>
+</section>
+<section id="Creating-the-course-environment">
+<h2>Creating the course environment<a class="headerlink" href="#Creating-the-course-environment" title="Permalink to this headline">¶</a></h2>
+<p>In the terminal, execute the following commands:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd numeric_students/utils
+conda env create -f numeric.yml
+conda activate numeric
+</pre></div>
+</div>
+</section>
+<section id="Opening-the-notebook-folder">
+<h2>Opening the notebook folder<a class="headerlink" href="#Opening-the-notebook-folder" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd ~/repos/numeric_students/numeric_notebooks
+jupyter notebook
+</pre></div>
+</div>
+</section>
+</section>
+
+
+      </div>
+    </div>
+  </div>
+      <div class="clearer"></div>
+    </div>
+  
+
+   
+    <div class="footer" role="contentinfo">
+        &#169; Copyright Numeric project.
+      Last updated on 09-Jan-2022.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.2.
+    </div> <script src="//www.mozilla.org/tabzilla/media/js/tabzilla.js"></script> 
+  <!-- remove loading of Mozilla tabzilla.js script -->
+
+  </body>
+</html>
